@@ -7,7 +7,7 @@ entity tb_vga is
 end tb_vga;
 
 architecture sim of tb_vga is
-  component vga
+  component vga_controler_top
     port(
       clk_i:      in  std_logic;
       reset_i:    in  std_logic;
@@ -49,7 +49,7 @@ architecture sim of tb_vga is
   signal s_v_sync: std_logic;
 
   begin
-    i_vga: vga
+    i_vga_controler_top: vga_controler_top
       port map(
         clk_i     => s_clk,
         reset_i   => s_reset,
@@ -71,14 +71,19 @@ architecture sim of tb_vga is
         s_vga_hsync_i => s_h_sync,
         s_vga_vsync_i => s_v_sync
       );
-    p_sim: process
+    p_clk: process
       begin
-        s_reset <= '1';
-        wait for 10 ms;
-        s_reset <= '0';
-        wait for 1000 ms;
-        
-        std.env.stop(0);
+        s_clk <= '0';
+        wait for 5 ns;
+        s_clk <= '1';
+        wait for 5 ns;
     end process;
 
+    p_reset: process
+        begin
+          s_reset <= '1';
+          wait for 20 ns;
+          s_reset <= '0';
+          std.env.stop(0);
+    end process;
 end architecture;

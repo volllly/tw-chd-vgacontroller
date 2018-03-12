@@ -29,22 +29,36 @@ gulp.task('compile:a:tb', () => {
 gulp.task('compile:a', gulp.series('compile:a:vhdl', 'compile:a:tb'));
 
 gulp.task('compile:e', () => {
-  return run('ghdl -e --ieee=synopsys --std=08 tb_vga', {
-    cwd: path.resolve(process.cwd(), './sim'),
-    verbosity: 3,
-    silent: false
-  }).exec();
+  return (
+    run('ghdl -e --ieee=synopsys --std=08 tb_vga', {
+      cwd: path.resolve(process.cwd(), './sim'),
+      verbosity: 3,
+      silent: false
+    }).exec() &&
+    run('ghdl -e --ieee=synopsys --std=08 tb_io_ctrl', {
+      cwd: path.resolve(process.cwd(), './sim'),
+      verbosity: 3,
+      silent: false
+    }).exec()
+  );
 });
 
 gulp.task('simulate:r', () => {
-  return run('ghdl -r --ieee=synopsys --std=08 tb_vga', {
-    cwd: path.resolve(process.cwd(), './sim'),
-    verbosity: 3,
-    silent: false
-  }).exec();
+  return (
+    run('ghdl -r --ieee=synopsys --std=08 tb_vga', {
+      cwd: path.resolve(process.cwd(), './sim'),
+      verbosity: 3,
+      silent: false
+    }).exec() &&
+    run('ghdl -r --ieee=synopsys --std=08 tb_io_ctrl', {
+      cwd: path.resolve(process.cwd(), './sim'),
+      verbosity: 3,
+      silent: false
+    }).exec()
+  );
 });
 
-gulp.task('compile', gulp.series('clean:sim', 'compile:a', 'compile:e', 'simulate:r'));
+gulp.task('compile', gulp.series('clean:sim', 'compile:a', 'compile:e'));
 gulp.task('simulate', gulp.series('simulate:r'));
 gulp.task('simulate:compile:tb', gulp.series('compile:a:tb', 'compile:e', 'simulate:r'));
 gulp.task('simulate:compile:all', gulp.series('compile', 'simulate:r'));
