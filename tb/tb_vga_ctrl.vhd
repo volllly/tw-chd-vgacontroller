@@ -27,7 +27,7 @@ architecture sim of tb_vga_ctrl is
   end component;
 
   signal s_clk:       std_logic;
-  signal s_s_res:     std_logic;
+  signal s_reset:     std_logic;
   signal s_px_en:     std_logic;
   signal s_red_i:     std_logic_vector(3 downto 0);
   signal s_green_i:   std_logic_vector(3 downto 0);
@@ -45,7 +45,7 @@ architecture sim of tb_vga_ctrl is
     i_vga_ctrl: vga_ctrl
       port map(
         clk_i     => s_clk,
-        reset_i   => s_s_res,
+        reset_i   => s_reset,
         px_en_i   => s_px_en,
         red_i     => s_red_i,
         green_i   => s_green_i,
@@ -86,24 +86,9 @@ architecture sim of tb_vga_ctrl is
 
     p_vga_ctrl: process
       begin
-        s_pb <= x"F";
-        wait until s_pbsync = x"F";
-        s_pb <= x"0";
-        wait until s_pbsync = x"0";
-        report "vga_ctrl: Button debounce tested" severity note;
+        
 
-        s_sw <= x"FFFF";
-        wait until s_swsync = x"FFFF";
-        s_sw <= x"0000";
-        wait until s_swsync = x"0000";
-        report "vga_ctrl: Switch debounce tested" severity note;
 
-        wait until s_px_en = '0';
-        wait for 20 ns;
-        assert (s_px_en'last_event = 20 ns) report "vga_ctrl: PX Enable not working "&time'image(s_px_en'last_event) severity error;
-        wait for 40 ns;
-        assert (s_px_en = '0') and (s_px_en'last_event = 20 ns) report "vga_ctrl: PX Enable not working "&time'image(s_px_en'last_event) severity error;
-        report "vga_ctrl: PX Enable tested" severity note;
         std.env.stop(0);
     end process;
 end architecture;

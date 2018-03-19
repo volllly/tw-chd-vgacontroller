@@ -39,6 +39,11 @@ gulp.task('compile:e', () => {
       cwd: path.resolve(process.cwd(), './sim'),
       verbosity: 3,
       silent: false
+    }).exec() &&
+    run('ghdl -e --ieee=synopsys --std=08 tb_vga_ctrl', {
+      cwd: path.resolve(process.cwd(), './sim'),
+      verbosity: 3,
+      silent: false
     }).exec()
   );
 });
@@ -51,6 +56,11 @@ gulp.task('simulate:r', () => {
       silent: false
     }).exec() &&
     run('ghdl -r --ieee=synopsys --std=08 tb_io_ctrl', {
+      cwd: path.resolve(process.cwd(), './sim'),
+      verbosity: 3,
+      silent: false
+    }).exec() &&
+    run('ghdl -r --ieee=synopsys --std=08 tb_vga_ctrl', {
       cwd: path.resolve(process.cwd(), './sim'),
       verbosity: 3,
       silent: false

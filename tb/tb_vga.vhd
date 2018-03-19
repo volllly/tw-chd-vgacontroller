@@ -84,6 +84,7 @@ architecture sim of tb_vga is
           s_reset <= '1';
           wait for 20 ns;
           s_reset <= '0';
+          wait for 1 sec;
           std.env.stop(0);
     end process;
 end architecture;
