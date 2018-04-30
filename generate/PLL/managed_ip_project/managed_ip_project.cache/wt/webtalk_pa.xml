@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Mon Apr 30 11:06:23 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="ac08ff0f7a944545979d6d17410c4b92" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="CustomizeCore" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="OpenPreviousIPHandler" value="1" type="JavaHandler"/>
+<property name="SimulationCompileLibraries" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceCommand.PACommandNames_SIMULATION_COMPILE_LIBRARIES, Compile Simulation Libraries..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FamilyChooserPanel_SPECIFY_OPTIONS, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FamilyOptionsDialog_ALL, All, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationCompileLibrariesDialog_COMPILE, Compile" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationCompileLibrariesDialog_COMPILED_LIBRARY_LOCATION, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationCompileLibrariesDialog_COMPILE_32_BIT_LIBRARIES, Compile 32-bit libraries, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Customize Commands" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="10" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="6" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

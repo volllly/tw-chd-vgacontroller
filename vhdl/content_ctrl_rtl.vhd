@@ -17,12 +17,27 @@ architecture struc of content_ctrl is
       douta: out std_logic_vector(11 downto 0)
       );
   end component;
+  component MU3 is
+    PORT (
+      clka:  in std_logic;
+      ena:   in std_logic;
+      wea:   in std_logic_vector(0 downto 0);
+      addra: in std_logic_vector(16 downto 0);
+      dina:  in std_logic_vector(11 downto 0);
+      clkb:  in std_logic;
+      addrb: in std_logic_vector(16 downto 0);
+      doutb: out std_logic_vector(11 downto 0)
+    );
+  end component;
 
   signal s_addra_mu1: std_logic_vector(16 downto 0);
   signal s_douta_mu1: std_logic_vector(11 downto 0);
   
   signal s_addra_mu2: std_logic_vector(13 downto 0);
   signal s_douta_mu2: std_logic_vector(11 downto 0);
+
+  signal s_addrb_mu3: std_logic_vector(16 downto 0);
+  signal s_doutb_mu3: std_logic_vector(11 downto 0);
   
   signal x_mov: integer range 0 to 540;
   signal y_mov: integer range 0 to 380;
@@ -39,6 +54,17 @@ architecture struc of content_ctrl is
         clka  => clk_i,
         addra => s_addra_mu2,
         douta => s_douta_mu2
+      );
+    i_mu3: MU3
+      port map(
+        clka  => clk_i,
+        ena   => ena_i,
+        wea   => wea_i,
+        addra => addra_i,
+        dina  => dina_i,
+        clkb  => clk_i,
+        addrb => s_addrb_mu3,
+        doutb => s_doutb_mu3
       );
 
     p_mov: process(reset_i, v_pos_i)
@@ -102,12 +128,21 @@ architecture struc of content_ctrl is
                 blue_o <= x"0";
             end case;
           elsif swsync_i(15) = '1' then
-            x_fix := to_integer(unsigned(h_pos_i)) mod 320;
-            y_fix := to_integer(unsigned(v_pos_i)) mod 240;
-            s_addra_mu1 <= std_logic_vector(to_unsigned(y_fix * 320 + x_fix,  s_addra_mu1'length));
-            red_o <= s_douta_mu1(11 downto 8);
-            green_o <= s_douta_mu1(7 downto 4);
-            blue_o <= s_douta_mu1(3 downto 0);
+            if swsync_i(14) = '0' then
+              x_fix := to_integer(unsigned(h_pos_i)) mod 320;
+              y_fix := to_integer(unsigned(v_pos_i)) mod 240;
+              s_addra_mu1 <= std_logic_vector(to_unsigned(y_fix * 320 + x_fix,  s_addra_mu1'length));
+              red_o <= s_douta_mu1(11 downto 8);
+              green_o <= s_douta_mu1(7 downto 4);
+              blue_o <= s_douta_mu1(3 downto 0);
+            else
+              x_fix := to_integer(unsigned(h_pos_i)) mod 320;
+              y_fix := to_integer(unsigned(v_pos_i)) mod 240;
+              s_addra_mu3 <= std_logic_vector(to_unsigned(y_fix * 320 + x_fix,  s_addra_mu3'length));
+              red_o <= s_douta_mu3(11 downto 8);
+              green_o <= s_douta_mu3(7 downto 4);
+              blue_o <= s_douta_mu3(3 downto 0);
+            end if;
           end if;
           if swsync_i(13) = '1' then
             x_fix := to_integer(unsigned(h_pos_i));

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Apr 30 10:12:29 2018
+# Process ID: 4060
+# Current directory: C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/PLL/managed_ip_project/managed_ip_project.runs/PLL_synth_1
+# Command line: vivado.exe -log PLL.vds -mode batch -messageDb vivado.pb -notrace -source PLL.tcl
+# Log file: C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/PLL/managed_ip_project/managed_ip_project.runs/PLL_synth_1/PLL.vds
+# Journal file: C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/PLL/managed_ip_project/managed_ip_project.runs/PLL_synth_1\vivado.jou
+#-----------------------------------------------------------
+source PLL.tcl -notrace

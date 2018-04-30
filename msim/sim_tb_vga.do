@@ -1,4 +1,4 @@
-vsim -t ns -novopt -lib work work.tb_vga work.glbl
+vsim -t ns -novopt -L unisims_ver -lib work work.tb_vga work.glbl
 view *
 
 onerror {resume}

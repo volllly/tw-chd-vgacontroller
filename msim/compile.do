@@ -6,9 +6,13 @@ file copy -force ../generate/MU2/MU2/MU2.mif ./
 vlog ../generate/MU2/MU2/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v
 vcom ../generate/MU2/MU2/synth/MU2.vhd -2008
 
+vlog ../generate/MU3/MU3/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v
+vcom ../generate/MU3/MU3/synth/MU3.vhd -2008
 
-vlog ../generate/prescaler/prescaler/prescaler_clk_wiz.v
-vlog ../generate/prescaler/prescaler/prescaler.v
+
+vlog ../generate/PLL/PLL/PLL_clk_wiz.v
+vlog ../generate/PLL/PLL/PLL.v
+
 vlog ../generate/mc8051_rom/mc8051_rom/blk_mem_gen_v8_3_2/simulation/blk_mem_gen_v8_3.v
 vcom ../generate/mc8051_rom/mc8051_rom/synth/mc8051_rom.vhd -2008
 vcom ../generate/mc8051_ram/mc8051_ram/synth/mc8051_ram.vhd -2008

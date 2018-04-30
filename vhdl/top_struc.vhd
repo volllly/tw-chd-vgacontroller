@@ -42,9 +42,13 @@ architecture struc of vga_controler_top is
       clk_i:      in  std_logic;
       reset_i:    in  std_logic;
       swsync_i:   in  std_logic_vector(15 downto 0);
-      pbsync_i:  in  std_logic_vector(3  downto 0);
+      pbsync_i:   in  std_logic_vector(3  downto 0);
       h_pos_i:    in  std_logic_vector(11 downto 0);
       v_pos_i:    in  std_logic_vector(11 downto 0);
+      ena_i:      in std_logic;
+      wea_i:      in std_logic_vector(0 downto 0);
+      addra_i:    in std_logic_vector(16 downto 0);
+      dina_i:     in std_logic_vector(11 downto 0);
       
       red_o:      out std_logic_vector(3 downto 0);
       green_o:    out std_logic_vector(3 downto 0);
@@ -52,22 +56,65 @@ architecture struc of vga_controler_top is
     );
   end component;
 
-  signal s_swsync:  std_logic_vector(15 downto 0);
-  signal s_pbsync: std_logic_vector(3  downto 0);
-  signal s_px_en:   std_logic;
+  component PLL is
+    port(
+      clk_in1  : in  std_logic;
+      clk_out1 : out std_logic;
+      reset    : in  std_logic;
+      locked   : out std_logic
+    );
+  end component;
+
+  component mc8051_top is
+    port (
+      clk       : in std_logic;
+      reset     : in std_logic;
+      int0_i    : in std_logic_vector(C_IMPL_N_EXT-1 downto 0);
+      int1_i    : in std_logic_vector(C_IMPL_N_EXT-1 downto 0);
+      all_t0_i  : in std_logic_vector(C_IMPL_N_TMR-1 downto 0);
+      all_t1_i  : in std_logic_vector(C_IMPL_N_TMR-1 downto 0);
+      all_rxd_i : in std_logic_vector(C_IMPL_N_SIU-1 downto 0);
+      p0_i      : in std_logic_vector(7 downto 0);
+      p1_i      : in std_logic_vector(7 downto 0);
+      p2_i      : in std_logic_vector(7 downto 0);
+      p3_i      : in std_logic_vector(7 downto 0); 
+
+      p0_o        : out std_logic_vector(7 downto 0);
+      p1_o        : out std_logic_vector(7 downto 0);
+      p2_o        : out std_logic_vector(7 downto 0);
+      p3_o        : out std_logic_vector(7 downto 0);
+      all_rxd_o   : out std_logic_vector(C_IMPL_N_SIU-1 downto 0);
+      all_txd_o   : out std_logic_vector(C_IMPL_N_SIU-1 downto 0);
+      all_rxdwr_o : out std_logic_vector(C_IMPL_N_SIU-1 downto 0);
+      test_o      : out std_logic_vector(7 downto 0)
+    );  
+  end component;
+
+  signal s_swsync:      std_logic_vector(15 downto 0);
+  signal s_pbsync:      std_logic_vector(3  downto 0);
+  signal s_px_en:       std_logic;
   
-  signal s_red:     std_logic_vector(3 downto 0);
-  signal s_green:   std_logic_vector(3 downto 0);
-  signal s_blue:    std_logic_vector(3 downto 0);
+  signal s_red:         std_logic_vector(3 downto 0);
+  signal s_green:       std_logic_vector(3 downto 0);
+  signal s_blue:        std_logic_vector(3 downto 0);
 
-  signal s_h_pos:   std_logic_vector(11 downto 0);
-  signal s_v_pos:   std_logic_vector(11 downto 0);
+  signal s_h_pos:       std_logic_vector(11 downto 0);
+  signal s_v_pos:       std_logic_vector(11 downto 0);
 
-  signal s_p2_o : std_logic_vector(7 downto 0);
-  signal s_locked : std_logic;
-  signal s_sync_locked : std_logic_vector(2 downto 0);
-  signal s_reset_8051 : std_logic;
-  signal s_clk_8051 : std_logic;
+  signal s_select_da:   std_logic;
+  signal s_set_da:      std_logic;
+  signal s_ena:         std_logic;
+  signal s_wea:         std_logic;
+
+  signal s_da:          std_logic_vector(21 downto 0);
+  signal s_addra:       std_logic_vector(16 downto 0);
+  signal s_dina:        std_logic_vector(11 downto 0);
+
+  signal s_p2_o:        std_logic_vector(7 downto 0);
+  signal s_locked:      std_logic;
+  signal s_sync_locked: std_logic_vector(2 downto 0);
+  signal s_reset_8051:  std_logic;
+  signal s_clk_8051:    std_logic;
    
   begin
 
@@ -87,7 +134,7 @@ architecture struc of vga_controler_top is
         end if;  
     end process p_reset_generator;
 
-    i_prescaler : prescaler
+    i_PLL : PLL
       port map (
         clk_in1  => clk_i,
         clk_out1 => s_clk_8051,
@@ -111,9 +158,9 @@ architecture struc of vga_controler_top is
         p2_i      => (others => '0'), 
         p3_i      => (others => '0'), 
         p0_o      => open,            
-        p1_o      => open,            
-        p2_o      => s_p2_o,
-        p3_o      => open,
+        p1_o      => s_da(23 downto 16), -- "xxxxx" & s_set_da & s_select_da & addra[16: 15]
+        p2_o      => s_da(15 downto 8),  --                                    addra[15:  8]  or  "xxxx" & dina[11: 8]
+        p3_o      => s_da(7 downto 0),   --                                    addra[7:   0]  or           dina[7:  0]
         test_o    => open
       );
 
@@ -152,12 +199,44 @@ architecture struc of vga_controler_top is
       clk_i       => clk_i,
       reset_i     => reset_i,
       swsync_i    => s_swsync,
-      pbsync_i   => s_pbsync,
+      pbsync_i    => s_pbsync,
       h_pos_i     => s_h_pos,
       v_pos_i     => s_v_pos,
-      
+      ena_i       => s_ena,
+      wea_i       => s_wea,
+      addra_i     => s_addra,
+      dina_i      => s_dina,
+
       red_o       => s_red,
       green_o     => s_green,
       blue_o      => s_blue
     );
+
+
+  p_rout_mu3: process(reset_i, s_set_da, s_select_da)
+    begin
+      s_ena <= '1';
+      if s_set_da = '0' and s_select_da = '0' then
+        s_ena <= '0';
+      end if;
+
+      if reset_i = '1' then
+        s_ena <= '0';
+        s_wea <= '0';
+        s_da <= 0;
+      elsif s_set_da'event and s_set_da = '1' then
+        s_ena <= '0';
+        if s_select_da = '0' then
+          s_addra <= s_da(16 downto 0);
+          s_wea <= '0';
+        else
+          s_dina <= s_da(11 downto 0);
+          s_wea <= '1';
+        end if;
+      end if;
+  end process;
+  s_select_da <= s_da(17);
+  s_set_da <= s_da(18);
+  s_da(23 downto 17) <= (others => open);
+
 end architecture;

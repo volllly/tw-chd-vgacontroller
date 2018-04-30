@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Prog_Old/Xilinx/SDK/2016.1/bin;C:/Prog_Old/Xilinx/Vivado/2016.1/ids_lite/ISE/bin/nt64;C:/Prog_Old/Xilinx/Vivado/2016.1/ids_lite/ISE/lib/nt64:C:/Prog_Old/Xilinx/Vivado/2016.1/bin
+  PATH=D:/Xilinx/Vivado/2016.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2016.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2016.1/bin
 else
-  PATH=C:/Prog_Old/Xilinx/SDK/2016.1/bin;C:/Prog_Old/Xilinx/Vivado/2016.1/ids_lite/ISE/bin/nt64;C:/Prog_Old/Xilinx/Vivado/2016.1/ids_lite/ISE/lib/nt64:C:/Prog_Old/Xilinx/Vivado/2016.1/bin:$PATH
+  PATH=D:/Xilinx/Vivado/2016.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2016.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2016.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/work/mc8051_basys3/hw/generate/artix7_xc7a35tcpg263_1/prescaler/managed_ip_project/managed_ip_project.runs/prescaler_synth_1'
+HD_PWD='C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/prescaler/managed_ip_project/managed_ip_project.runs/prescaler_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-// Date        : Wed Feb 08 13:42:42 2017
-// Host        : PR-PC1 running 64-bit major release  (build 7600)
+// Date        : Mon Apr 30 09:45:58 2018
+// Host        : volly-SF running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/work/mc8051_basys3/hw/generate/artix7_xc7a35tcpg263_1/prescaler/prescaler/prescaler_stub.v
+//               C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/prescaler/prescaler/prescaler_stub.v
 // Design      : prescaler
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1
