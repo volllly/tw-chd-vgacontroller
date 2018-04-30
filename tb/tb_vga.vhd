@@ -24,7 +24,7 @@ architecture sim of tb_vga is
 
   component vga_monitor
     generic(
-      g_no_frames:  integer range 1 to 99 := 1;
+      g_no_frames:  integer range 1 to 99 := 10;
       g_path:       string                := "vga_output/"
     );
     port(
@@ -84,7 +84,15 @@ architecture sim of tb_vga is
           s_reset <= '1';
           wait for 20 ns;
           s_reset <= '0';
-          wait for 1 sec;
-          std.env.stop(0);
+          wait;
+    end process;
+
+    p_mode: process
+        begin
+          s_sw <= x"A000";
+          s_pb <= x"5";
+          --wait for 7 ms;
+          --s_sw <= x"4000";
+          wait;
     end process;
 end architecture;

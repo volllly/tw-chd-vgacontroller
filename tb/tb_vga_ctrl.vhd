@@ -88,7 +88,6 @@ architecture sim of tb_vga_ctrl is
       begin
         
 
-
-        std.env.stop(0);
+        wait;
     end process;
 end architecture;

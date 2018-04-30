@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Feb 08 13:41:54 2017
+# Process ID: 5708
+# Current directory: D:/work/mc8051_basys3/hw/generate/artix7_xc7a35tcpg263_1/prescaler/managed_ip_project/managed_ip_project.runs/prescaler_synth_1
+# Command line: vivado.exe -log prescaler.vds -mode batch -messageDb vivado.pb -notrace -source prescaler.tcl
+# Log file: D:/work/mc8051_basys3/hw/generate/artix7_xc7a35tcpg263_1/prescaler/managed_ip_project/managed_ip_project.runs/prescaler_synth_1/prescaler.vds
+# Journal file: D:/work/mc8051_basys3/hw/generate/artix7_xc7a35tcpg263_1/prescaler/managed_ip_project/managed_ip_project.runs/prescaler_synth_1\vivado.jou
+#-----------------------------------------------------------
+source prescaler.tcl -notrace
