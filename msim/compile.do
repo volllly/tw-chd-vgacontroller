@@ -87,16 +87,22 @@ vcom ../vhdl/mc8051/mc8051_top_struc_cfg.vhd -2008
 
 
 vcom ../vhdl/content_ctrl_.vhd -2008
-vcom ../vhdl/content_ctrl_rtl.vhd -2008 
+vcom ../vhdl/content_ctrl_rtl_mem1.vhd -2008 
+vcom ../vhdl/content_ctrl_rtl_mem2.vhd -2008 
+vcom ../vhdl/content_ctrl_rtl_config.vhd -2008 
 vcom ../vhdl/io_ctrl_.vhd -2008 
 vcom ../vhdl/io_ctrl_rtl.vhd -2008 
 vcom ../vhdl/top_.vhd -2008 
-vcom ../vhdl/top_struc.vhd -2008 
+vcom ../vhdl/top_struc_mem1.vhd -2008 
+vcom ../vhdl/top_struc_mem2.vhd -2008 
+vcom ../vhdl/top_struc_config.vhd -2008 
 vcom ../vhdl/vga_ctrl_.vhd -2008 
 vcom ../vhdl/vga_ctrl_rtl.vhd -2008 
 
 vcom ../tb/tb_io_ctrl.vhd -2008 
 vcom ../tb/tb_vga_ctrl.vhd -2008 
-vcom ../tb/tb_vga.vhd -2008 
+vcom ../tb/tb_vga_mem1.vhd -2008 
+vcom ../tb/tb_vga_mem2.vhd -2008 
+vcom ../tb/tb_vga_config.vhd -2008 
 vcom ../tb/vga_monitor_.vhd -2008 
 vcom ../tb/vga_monitor_sim.vhd -2008 

@@ -1,4 +1,4 @@
-vsim -t ns -novopt -L unisims_ver -lib work work.tb_vga work.glbl
+vsim -t ps -novopt -L unisims_ver -lib work work.tb_vga work.glbl
 view *
 
 onerror {resume}
@@ -18,6 +18,10 @@ add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vg
 add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/y_mov
 add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/s_addra_mu1
 add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/s_douta_mu1
+add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/s_addra_mu2
+add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/s_douta_mu2
+add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/s_addrb_mu3
+add wave -noupdate -format Logic -color blue    -radix unsigned     /tb_vga/i_vga_controler_top/i_content_ctrl/s_doutb_mu3
 add wave -noupdate -format Logic -color green   -radix unsigned     /tb_vga/s_red
 add wave -noupdate -format Logic -color green   -radix unsigned     /tb_vga/s_green
 add wave -noupdate -format Logic -color green   -radix unsigned     /tb_vga/s_blue
@@ -30,4 +34,4 @@ configure wave -valuecolwidth 100
 configure wave -signalnamewidth 0
 configure wave -justifyvalue left
 
-run 1 sec
+run 100 ms

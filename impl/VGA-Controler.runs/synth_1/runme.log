@@ -1,0 +1,1194 @@
+
+*** Running vivado
+    with args -log vga_controler_top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vga_controler_top.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vga_controler_top.tcl -notrace
+Command: synth_design -top vga_controler_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10320 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 284.531 ; gain = 77.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_controler_top' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:7]
+INFO: [Synth 8-3491] module 'PLL' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/PLL_stub.vhdl:5' bound to instance 'i_PLL' of component 'PLL' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'PLL' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/PLL_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mc8051_top' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_.vhd:74' bound to instance 'i_mc8051_top' of component 'mc8051_top' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'mc8051_top' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:67]
+INFO: [Synth 8-3491] module 'mc8051_core' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_.vhd:75' bound to instance 'i_mc8051_core' of component 'mc8051_core' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'mc8051_core' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_struc.vhd:67]
+INFO: [Synth 8-3491] module 'mc8051_control' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_control_.vhd:74' bound to instance 'i_mc8051_control' of component 'mc8051_control' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_struc.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'mc8051_control' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_control_struc.vhd:66]
+INFO: [Synth 8-3491] module 'control_fsm' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_fsm_.vhd:74' bound to instance 'i_control_fsm' of component 'control_fsm' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_control_struc.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'control_fsm' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_fsm_rtl.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'control_fsm' (1#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_fsm_rtl.vhd:66]
+INFO: [Synth 8-3491] module 'control_mem' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_.vhd:75' bound to instance 'i_control_mem' of component 'control_mem' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_control_struc.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'control_mem' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:68]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:678]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:789]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:797]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:1104]
+INFO: [Synth 8-256] done synthesizing module 'control_mem' (2#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'mc8051_control' (3#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_control_struc.vhd:66]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mc8051_alu' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_.vhd:75' bound to instance 'i_mc8051_alu' of component 'mc8051_alu' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_struc.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'mc8051_alu' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:67]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'alumux' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/alumux_.vhd:74' bound to instance 'i_alumux' of component 'alumux' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'alumux' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/alumux_rtl.vhd:65]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alumux' (4#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/alumux_rtl.vhd:65]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'alucore' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/alucore_.vhd:73' bound to instance 'i_alucore' of component 'alucore' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'alucore' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/alucore_rtl.vhd:65]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alucore' (5#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/alucore_rtl.vhd:65]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'addsub_core' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_core_.vhd:76' bound to instance 'i_addsub_core' of component 'addsub_core' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'addsub_core' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_core_struc.vhd:67]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter DWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'addsub_cy' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_cy_.vhd:72' bound to instance 'i_addsub_cy' of component 'addsub_cy' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_core_struc.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'addsub_cy' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_cy_rtl.vhd:66]
+	Parameter DWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'addsub_cy' (6#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_cy_rtl.vhd:66]
+	Parameter DWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'addsub_ovcy' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_ovcy_.vhd:72' bound to instance 'i_addsub_ovcy' of component 'addsub_ovcy' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_core_struc.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'addsub_ovcy' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_ovcy_rtl.vhd:66]
+	Parameter DWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'addsub_ovcy' (7#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_ovcy_rtl.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'addsub_core' (8#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_core_struc.vhd:67]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'comb_mltplr' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/comb_mltplr_.vhd:72' bound to instance 'i_comb_mltplr' of component 'comb_mltplr' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'comb_mltplr' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/comb_mltplr_rtl.vhd:66]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'comb_mltplr' (9#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/comb_mltplr_rtl.vhd:66]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'comb_divider' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/comb_divider_.vhd:72' bound to instance 'i_comb_divider' of component 'comb_divider' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'comb_divider' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/comb_divider_rtl.vhd:66]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'comb_divider' (10#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/comb_divider_rtl.vhd:66]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'dcml_adjust' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/dcml_adjust_.vhd:72' bound to instance 'i_dcml_adjust' of component 'dcml_adjust' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'dcml_adjust' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/dcml_adjust_rtl.vhd:66]
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dcml_adjust' (11#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/dcml_adjust_rtl.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'mc8051_alu' (12#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_alu_struc.vhd:67]
+INFO: [Synth 8-3491] module 'mc8051_siu' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_siu_.vhd:71' bound to instance 'i_mc8051_siu' of component 'mc8051_siu' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_struc.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'mc8051_siu' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_siu_rtl.vhd:65]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_siu_rtl.vhd:422]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_siu_rtl.vhd:830]
+INFO: [Synth 8-256] done synthesizing module 'mc8051_siu' (13#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_siu_rtl.vhd:65]
+INFO: [Synth 8-3491] module 'mc8051_tmrctr' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_tmrctr_.vhd:71' bound to instance 'i_mc8051_tmrctr' of component 'mc8051_tmrctr' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_struc.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'mc8051_tmrctr' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_tmrctr_rtl.vhd:65]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_tmrctr_rtl.vhd:248]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_tmrctr_rtl.vhd:528]
+INFO: [Synth 8-256] done synthesizing module 'mc8051_tmrctr' (14#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_tmrctr_rtl.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'mc8051_core' (15#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_core_struc.vhd:67]
+INFO: [Synth 8-3491] module 'mc8051_rom' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/mc8051_rom_stub.vhdl:5' bound to instance 'i_mc8051_rom' of component 'mc8051_rom' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'mc8051_rom' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/mc8051_rom_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'mc8051_ram' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/mc8051_ram_stub.vhdl:5' bound to instance 'i_mc8051_ram' of component 'mc8051_ram' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'mc8051_ram' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/mc8051_ram_stub.vhdl:16]
+WARNING: [Synth 8-3848] Net s_ramx_data_out in module/entity mc8051_top does not have driver. [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'mc8051_top' (16#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:67]
+INFO: [Synth 8-3491] module 'io_ctrl' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/io_ctrl_.vhd:5' bound to instance 'i_io_ctrl' of component 'io_ctrl' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'io_ctrl' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/io_ctrl_rtl.vhd:5]
+WARNING: [Synth 8-614] signal 's_int_clk_enable' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/io_ctrl_rtl.vhd:53]
+WARNING: [Synth 8-614] signal 's_int_clk_enable' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/io_ctrl_rtl.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'io_ctrl' (17#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/io_ctrl_rtl.vhd:5]
+INFO: [Synth 8-3491] module 'vga_ctrl' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/vga_ctrl_.vhd:5' bound to instance 'i_vga_ctrl' of component 'vga_ctrl' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/vga_ctrl_rtl.vhd:5]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (18#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/vga_ctrl_rtl.vhd:5]
+	Parameter loadout_g bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'content_ctrl' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_.vhd:7' bound to instance 'i_content_ctrl' of component 'content_ctrl' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'content_ctrl' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:5]
+INFO: [Synth 8-3491] module 'MU1' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/MU1_stub.vhdl:5' bound to instance 'i_mu1' of component 'MU1' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'MU1' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/MU1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'MU2' declared at 'C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/MU2_stub.vhdl:5' bound to instance 'i_mu2' of component 'MU2' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'MU2' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/realtime/MU2_stub.vhdl:14]
+WARNING: [Synth 8-614] signal 'pbsync_i' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:59]
+WARNING: [Synth 8-614] signal 'x_mov' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:59]
+WARNING: [Synth 8-614] signal 'y_mov' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:59]
+WARNING: [Synth 8-614] signal 'swsync_i' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:88]
+WARNING: [Synth 8-614] signal 's_doutb_mu3' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:88]
+WARNING: [Synth 8-614] signal 'x_mov' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:88]
+WARNING: [Synth 8-614] signal 'y_mov' is read in the process but is not in the sensitivity list [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:88]
+WARNING: [Synth 8-3848] Net s_doutb_mu3 in module/entity content_ctrl does not have driver. [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'content_ctrl' (19#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:5]
+INFO: [Synth 8-256] done synthesizing module 'vga_controler_top' (20#1) [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[12]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[11]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[10]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[9]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[8]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[6]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[5]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[4]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[3]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[2]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[1]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[0]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port ena_i
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port wea_i[0]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[16]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[15]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[14]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[13]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[12]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[11]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[10]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[9]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[8]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[6]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[5]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[4]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[3]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[2]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[1]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[0]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[11]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[10]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[9]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[8]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[6]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[5]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[4]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[3]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[2]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[1]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[0]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[6]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[5]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[4]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[3]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[2]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[1]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port psw[0]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port ie[7]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port ie[6]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port ie[5]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port ip[7]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port ip[6]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port ip[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 365.184 ; gain = 157.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[7] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[6] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[5] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[4] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[3] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[2] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[1] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin i_mc8051_core:datax_i[0] to constant 0 [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:93]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 365.184 ; gain = 157.793
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MU1' instantiated as 'i_content_ctrl/i_mu1' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:46]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MU2' instantiated as 'i_content_ctrl/i_mu2' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:52]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'PLL' instantiated as 'i_PLL' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/top_struc.vhd:140]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'mc8051_ram' instantiated as 'i_mc8051_top/i_mc8051_ram' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:146]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'mc8051_rom' instantiated as 'i_mc8051_top/i_mc8051_rom' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/mc8051_top_struc.vhd:135]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp/MU2_in_context.xdc] for cell 'i_content_ctrl/i_mu2'
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp/MU2_in_context.xdc] for cell 'i_content_ctrl/i_mu2'
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_2/MU1_in_context.xdc] for cell 'i_content_ctrl/i_mu1'
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_2/MU1_in_context.xdc] for cell 'i_content_ctrl/i_mu1'
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_3/mc8051_ram_in_context.xdc] for cell 'i_mc8051_top/i_mc8051_ram'
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_3/mc8051_ram_in_context.xdc] for cell 'i_mc8051_top/i_mc8051_ram'
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_4/PLL_in_context.xdc] for cell 'i_PLL'
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_4/PLL_in_context.xdc] for cell 'i_PLL'
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_5/mc8051_rom_in_context.xdc] for cell 'i_mc8051_top/i_mc8051_rom'
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_5/mc8051_rom_in_context.xdc] for cell 'i_mc8051_top/i_mc8051_rom'
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.srcs/constrs_1/new/VGA-Contrler-constrs.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name. [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.srcs/constrs_1/new/VGA-Contrler-constrs.xdc:1]
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.srcs/constrs_1/new/VGA-Contrler-constrs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.srcs/constrs_1/new/VGA-Contrler-constrs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_controler_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_controler_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 654.965 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'i_content_ctrl/i_mu1' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'i_content_ctrl/i_mu2' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_i. (constraint file  C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_4/PLL_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_i. (constraint file  C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_1/.Xil/Vivado-13040-volly-SF/dcp_4/PLL_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for i_PLL. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_content_ctrl/i_mu1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_content_ctrl/i_mu2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_mc8051_top/i_mc8051_ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_nextstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_data_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_intpre2_d" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_bdata_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_data_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_data_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help16_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help16_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_nextstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_data_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_intpre2_d" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_bdata_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_data_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_data_mux" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help16_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help16_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_pc_inc_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_adr_mux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "s_wrx_mux" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "s_bdata_mux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_regs_wr_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_help_en" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/control_mem_rtl.vhd:231]
+INFO: [Synth 8-5546] ROM "all_wt_en_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "all_trans_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "psw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "psw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tcon[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scon[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "acc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "acc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dpl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dph" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pcon" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmod[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tsel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ssel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "gprbit_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gprbit_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "s_r0_b0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ov_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ov_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alu_cmd_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "addsub_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/mc8051/addsub_cy_rtl.vhd:81]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:144]
+INFO: [Synth 8-5545] ROM "x_mov1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "y_mov1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'x_mov_reg' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 'y_mov_reg' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'v_zero_reg' [C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/vhdl/content_ctrl_rtl_mem1.vhd:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 6     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   3 Input      3 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 56    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 58    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   3 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 1     
+	  10 Input     11 Bit        Muxes := 1     
+	   9 Input     11 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      9 Bit        Muxes := 9     
+	   4 Input      9 Bit        Muxes := 8     
+	   9 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 130   
+	  12 Input      8 Bit        Muxes := 15    
+	  30 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 29    
+	   3 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	  24 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 7     
+	  14 Input      8 Bit        Muxes := 5     
+	  13 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 47    
+	   3 Input      7 Bit        Muxes := 3     
+	  17 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	  24 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 40    
+	   3 Input      6 Bit        Muxes := 16    
+	   4 Input      6 Bit        Muxes := 14    
+	   5 Input      6 Bit        Muxes := 1     
+	 112 Input      6 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	 112 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 83    
+	   3 Input      4 Bit        Muxes := 17    
+	 112 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 65    
+	   3 Input      3 Bit        Muxes := 9     
+	   4 Input      3 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 5     
+	 112 Input      3 Bit        Muxes := 1     
+	  24 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 36    
+	   4 Input      2 Bit        Muxes := 11    
+	   5 Input      2 Bit        Muxes := 9     
+	 112 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 3     
+	  13 Input      2 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 139   
+	   3 Input      1 Bit        Muxes := 34    
+	   4 Input      1 Bit        Muxes := 32    
+	 112 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 21    
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 10    
+	  23 Input      1 Bit        Muxes := 16    
+	  12 Input      1 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_controler_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module control_fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 46    
+	   3 Input      7 Bit        Muxes := 3     
+	  17 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 32    
+	   3 Input      6 Bit        Muxes := 16    
+	   4 Input      6 Bit        Muxes := 14    
+	   5 Input      6 Bit        Muxes := 1     
+	 112 Input      6 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	 112 Input      5 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 65    
+	   3 Input      4 Bit        Muxes := 15    
+	 112 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 63    
+	   3 Input      3 Bit        Muxes := 9     
+	   4 Input      3 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 3     
+	 112 Input      3 Bit        Muxes := 1     
+	  24 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 27    
+	   4 Input      2 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 6     
+	 112 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 61    
+	   3 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 5     
+	 112 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module control_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 50    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 92    
+	  12 Input      8 Bit        Muxes := 14    
+	  30 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 29    
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  24 Input      8 Bit        Muxes := 1     
+	  24 Input      7 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 23    
+	   3 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  23 Input      1 Bit        Muxes := 16    
+	  12 Input      1 Bit        Muxes := 1     
+Module alumux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 2     
+Module alucore 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+Module addsub_cy 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module addsub_ovcy 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module comb_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module dcml_adjust 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mc8051_siu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 1     
+	  10 Input     11 Bit        Muxes := 1     
+	   9 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	  13 Input      8 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	  13 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 4     
+	  12 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	  10 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 14    
+	  13 Input      1 Bit        Muxes := 8     
+	  12 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 9     
+	   9 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 10    
+Module mc8051_tmrctr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 24    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 6     
+Module io_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module vga_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input      9 Bit        Muxes := 8     
+	   2 Input      9 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module content_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 4     
+	   6 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 15    
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "acc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dph" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pcon" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmod[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tsel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ssel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dpl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "all_trans_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "all_wt_en_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i_alumux/ov_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i_alumux/ov_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "x_mov1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "y_mov1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[12]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[11]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[10]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[9]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[8]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[6]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[5]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[4]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[3]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[2]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[1]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port swsync_i[0]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port ena_i
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port wea_i[0]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[16]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[15]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[14]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[13]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[12]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[11]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[10]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[9]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[8]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[6]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[5]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[4]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[3]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[2]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[1]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port addra_i[0]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[11]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[10]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[9]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[8]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[7]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[6]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[5]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[4]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[3]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[2]
+WARNING: [Synth 8-3331] design content_ctrl has unconnected port dina_i[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 654.965 ; gain = 447.574
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_vga_ctrl/v_pos_o_reg[9]' (FDCE) to 'i_vga_ctrl/v_pos_o_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_vga_ctrl/v_pos_o_reg[10]' (FDCE) to 'i_vga_ctrl/v_pos_o_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_vga_ctrl/v_pos_o_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_vga_ctrl/h_pos_o_reg[10]' (FDCE) to 'i_vga_ctrl/h_pos_o_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (p0_reg[7]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[6]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[5]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[4]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[3]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[2]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[1]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p0_reg[0]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[7]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[6]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[5]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[4]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[3]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[2]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[1]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p1_reg[0]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[7]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[6]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[5]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[4]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[3]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[2]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[1]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p2_reg[0]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[7]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[6]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[5]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[4]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[3]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[2]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[1]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (p3_reg[0]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][7]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][6]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][5]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][4]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][3]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][2]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][1]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (sbuf_reg[0][0]) is unused and will be removed from module control_mem.
+WARNING: [Synth 8-3332] Sequential element (rxdwr_o_reg) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[10]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[9]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[8]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[7]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[6]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[5]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[4]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[3]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[2]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[1]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_tran_sh_reg[0]) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (rxd_o_reg) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (s_txdm0_reg) is unused and will be removed from module mc8051_siu.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[12]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[11]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[10]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[9]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[8]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[7]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[6]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[5]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[4]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[3]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[2]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[1]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.s_swsync_db_reg[0]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[12]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[11]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[10]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[9]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[8]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[7]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[6]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[5]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[4]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[3]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[2]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[1]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_io_ctrl/b_i_sync.swsync_o_reg[0]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_vga_ctrl/h_pos_o_reg[10]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_vga_ctrl/v_pos_o_reg[11]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_vga_ctrl/v_pos_o_reg[10]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (i_vga_ctrl/v_pos_o_reg[9]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_ena_reg) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_wea_reg[0]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[16]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[15]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[14]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[13]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[12]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[11]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[10]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[9]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[8]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[7]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[6]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[5]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[4]) is unused and will be removed from module vga_controler_top.
+WARNING: [Synth 8-3332] Sequential element (s_addra_reg[3]) is unused and will be removed from module vga_controler_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:02:41 . Memory (MB): peak = 654.965 ; gain = 447.574
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:25 ; elapsed = 00:02:41 . Memory (MB): peak = 654.965 ; gain = 447.574
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'i_PLL/clk_out1' to pin 'i_PLL/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk_i'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 679.680 ; gain = 472.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:55 . Memory (MB): peak = 727.859 ; gain = 520.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:41 ; elapsed = 00:02:58 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:41 ; elapsed = 00:02:58 . Memory (MB): peak = 872.215 ; gain = 664.824
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:41 ; elapsed = 00:02:58 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:02:59 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:42 ; elapsed = 00:02:59 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:42 ; elapsed = 00:03:00 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:42 ; elapsed = 00:03:00 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:03:00 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:43 ; elapsed = 00:03:00 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |PLL           |         1|
+|2     |MU1           |         1|
+|3     |MU2           |         1|
+|4     |mc8051_rom    |         1|
+|5     |mc8051_ram    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |MU1_bbox        |     1|
+|2     |MU2_bbox        |     1|
+|3     |PLL_bbox        |     1|
+|4     |mc8051_ram_bbox |     1|
+|5     |mc8051_rom_bbox |     1|
+|6     |CARRY4          |   136|
+|7     |LUT1            |   161|
+|8     |LUT2            |   474|
+|9     |LUT3            |   281|
+|10    |LUT4            |   370|
+|11    |LUT5            |   538|
+|12    |LUT6            |  1440|
+|13    |MUXF7           |    99|
+|14    |MUXF8           |    20|
+|15    |FDCE            |   573|
+|16    |FDPE            |    45|
+|17    |FDRE            |    14|
+|18    |LDC             |    19|
+|19    |LDCP            |     1|
+|20    |IBUF            |     8|
+|21    |OBUF            |    14|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+---------------+------+
+|      |Instance                                     |Module         |Cells |
++------+---------------------------------------------+---------------+------+
+|1     |top                                          |               |  4235|
+|2     |  i_content_ctrl                             |content_ctrl   |   349|
+|3     |  i_io_ctrl                                  |io_ctrl        |   297|
+|4     |  i_mc8051_top                               |mc8051_top     |  3280|
+|5     |    i_mc8051_core                            |mc8051_core    |  3264|
+|6     |      \gen_mc8051_siu[0].i_mc8051_siu        |mc8051_siu     |   107|
+|7     |      \gen_mc8051_tmrctr[0].i_mc8051_tmrctr  |mc8051_tmrctr  |   114|
+|8     |      i_mc8051_alu                           |mc8051_alu     |    35|
+|9     |        \gen_divider1.i_comb_divider         |comb_divider   |    11|
+|10    |        \gen_multiplier1.i_comb_mltplr       |comb_mltplr    |    23|
+|11    |        i_alucore                            |alucore        |     1|
+|12    |      i_mc8051_control                       |mc8051_control |  3008|
+|13    |        i_control_mem                        |control_mem    |  2297|
+|14    |  i_vga_ctrl                                 |vga_ctrl       |   265|
++------+---------------------------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:03:00 . Memory (MB): peak = 872.215 ; gain = 664.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 214 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:23 ; elapsed = 00:02:41 . Memory (MB): peak = 872.215 ; gain = 367.840
+Synthesis Optimization Complete : Time (s): cpu = 00:02:43 ; elapsed = 00:03:00 . Memory (MB): peak = 872.215 ; gain = 664.824
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 164 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 7 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  LDC => LDCE: 19 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+245 Infos, 231 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:43 ; elapsed = 00:02:58 . Memory (MB): peak = 872.215 ; gain = 664.824
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 872.215 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 01 11:19:12 2018...
