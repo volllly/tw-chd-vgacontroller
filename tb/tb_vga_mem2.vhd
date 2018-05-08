@@ -48,6 +48,8 @@ architecture sim_mem2 of tb_vga is
   signal s_h_sync: std_logic;
   signal s_v_sync: std_logic;
 
+  for all: vga_controler_top use configuration work.vga_controler_top_cfg;
+
   begin
     i_vga_controler_top: vga_controler_top
       port map(

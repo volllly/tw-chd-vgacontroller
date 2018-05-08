@@ -1,4 +1,4 @@
 configuration content_ctrl_cfg of content_ctrl is
-  for struc_mem1 
+  for rtl_mem2
   end for;
 end configuration;

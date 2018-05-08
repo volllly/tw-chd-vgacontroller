@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue May 01 16:17:17 2018">
+<application name="pa" timeStamp="Tue May 08 08:00:22 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="240812e81b564d2e97da5a432588df5e" type="ProjectID"/>
-<property name="ProjectIteration" value="3" type="ProjectIteration"/>
+<property name="ProjectIteration" value="16" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -14,31 +14,51 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
 <property name="DesignMode" value="RTL" type="DesignMode"/>
 <property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
-<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+<property name="ImplStrategy" value="Performance_Retiming" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="5" type="JavaHandler"/>
+<property name="AddSources" value="6" type="JavaHandler"/>
 <property name="CloseProject" value="9" type="JavaHandler"/>
 <property name="ConfigureBitstream" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="4" type="JavaHandler"/>
+<property name="EditConstraintSets" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="8" type="JavaHandler"/>
+<property name="EditProperties" value="1" type="JavaHandler"/>
 <property name="ManageCompositeTargets" value="3" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenExistingReport" value="2" type="JavaHandler"/>
+<property name="OpenIPLocationHandler" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="4" type="JavaHandler"/>
 <property name="RecustomizeCore" value="3" type="JavaHandler"/>
-<property name="RunBitgen" value="2" type="JavaHandler"/>
-<property name="RunSynthesis" value="12" type="JavaHandler"/>
-<property name="ShowView" value="11" type="JavaHandler"/>
+<property name="RunBitgen" value="3" type="JavaHandler"/>
+<property name="RunImplementation" value="9" type="JavaHandler"/>
+<property name="RunSynthesis" value="17" type="JavaHandler"/>
+<property name="SetTopNode" value="1" type="JavaHandler"/>
+<property name="ShowView" value="15" type="JavaHandler"/>
+<property name="TimingConstraintsWizard" value="1" type="JavaHandler"/>
 <property name="UpdateSourceFiles" value="2" type="JavaHandler"/>
 <property name="ViewLayoutCmd" value="1" type="JavaHandler"/>
-<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="7" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="6" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
+<property name="PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, -6.912 ns" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, Timing Summary Report ;  ;  ; , 8" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, Timing Summary Report ;  ;  ; , 8, Timing Summary Report, 0, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, Timing Summary Report ;  ;  ; , 8, Timing Summary Report, 0, false, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, Timing Summary Report ; Mon May 07 21:45:35 CEST 2018 ; 452756 ; Open, 34, Open, 3, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, impl_3 ; constrs_1 ; route_design Complete, Failed Timing! ; -6.912043571472168 ; -856.4415283203125 ; -6.502402305603027 ; -383.3426513671875 ; 0.0 ; 0 ; 2367 ; 609 ; 35 ; 0 ; 0 ; Mon May 07 20:56:44 CEST 2018 ; 00:48:55 ; Performance_Retiming (Vivado Implementation 2016" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Route Design, [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.. Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt" value="3" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TimingGettingStartedPanel_CHECK_TIMING, Check Timing" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TimingGettingStartedPanel_REPORT_TIMING, Report Timing" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TimingGettingStartedPanel_REPORT_TIMING_SUMMARY, Report Timing Summary" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="3" type="GuiResourceData"/>
 <property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="19" type="GuiMode"/>
+<property name="GuiMode" value="20" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="12" type="TclMode"/>
+<property name="TclMode" value="13" type="TclMode"/>
 </item>
 </section>
 </application>

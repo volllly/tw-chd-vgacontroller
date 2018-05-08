@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon May 07 20:52:31 2018
+# Process ID: 8412
+# Current directory: C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_2
+# Command line: vivado.exe -log vga_controler_top_cfg.vds -mode batch -messageDb vivado.pb -notrace -source vga_controler_top_cfg.tcl
+# Log file: C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_2/vga_controler_top_cfg.vds
+# Journal file: C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/impl/VGA-Controler.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source vga_controler_top_cfg.tcl -notrace

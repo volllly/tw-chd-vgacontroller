@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-architecture struc_mem2 of content_ctrl is
+architecture rtl_mem2 of content_ctrl is
   component MU1 is
     port(
       clka:  in  std_logic;
@@ -60,8 +60,8 @@ architecture struc_mem2 of content_ctrl is
         blue_o <= x"0";
         s_addrb_mu3 <= (others => '0');
         if not reset_i = '1' then
-          x_fix := to_integer(unsigned(h_pos_i)) mod 320;
-          y_fix := to_integer(unsigned(v_pos_i)) mod 240;
+          x_fix := to_integer(unsigned(h_pos_i));
+          y_fix := to_integer(unsigned(v_pos_i));
           s_addrb_mu3 <= std_logic_vector(to_unsigned(y_fix * 320 + x_fix,  s_addrb_mu3'length));
           red_o <= s_doutb_mu3(11 downto 8);
           green_o <= s_doutb_mu3(7 downto 4);

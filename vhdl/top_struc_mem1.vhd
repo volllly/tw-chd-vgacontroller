@@ -70,6 +70,8 @@ architecture struc_mem1 of vga_controler_top is
   signal s_h_pos:       std_logic_vector(11 downto 0);
   signal s_v_pos:       std_logic_vector(11 downto 0);
    
+  for all: content_ctrl use configuration work.content_ctrl_cfg;
+
   begin
     i_io_ctrl: io_ctrl
       port map(

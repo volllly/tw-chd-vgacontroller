@@ -119,6 +119,8 @@ architecture struc_mem2 of vga_controler_top is
   signal s_reset_8051:  std_logic;
   signal s_clk_8051:    std_logic;
    
+  for all: content_ctrl use configuration work.content_ctrl_cfg;
+  
   begin
 
     p_reset_generator : process (reset_i, s_clk_8051)
