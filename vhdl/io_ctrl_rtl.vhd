@@ -55,9 +55,11 @@ architecture rtl of io_ctrl is
             if reset_i = '1' then
               s_swsync_db <= (others => '0');
               swsync_o <= (others => '0');
-            elsif s_int_clk_enable = '1'  and clk_i = '1' and clk_i'event then  -- with 1KHz
-              s_swsync_db <= sw_i;                                            -- save the current state  
-              swsync_o <= sw_i and s_swsync_db;                               -- and if the last state of one button equals the current state of the same button output that state
+            elsif clk_i = '1' and clk_i'event then  -- with 1KHz
+              if s_int_clk_enable = '1' then
+                s_swsync_db <= sw_i;                                              -- save the current state  
+                swsync_o <= sw_i and s_swsync_db;                               -- and if the last state of one button equals the current state of the same button output that state
+              end if;
             end if;
         end process;
 
@@ -66,9 +68,11 @@ architecture rtl of io_ctrl is
             if reset_i = '1' then
               s_pbsync_db <= (others => '0');
               pbsync_o <= (others => '0');
-            elsif s_int_clk_enable = '1'  and clk_i = '1' and clk_i'event then
-              s_pbsync_db <= pb_i;
-              pbsync_o <= pb_i and s_pbsync_db;
+            elsif clk_i = '1' and clk_i'event then
+              if s_int_clk_enable = '1' then
+                s_pbsync_db <= pb_i;
+                pbsync_o <= pb_i and s_pbsync_db;
+              end if;
             end if;
         end process;
     end block;

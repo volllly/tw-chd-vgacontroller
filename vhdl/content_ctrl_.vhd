@@ -12,10 +12,6 @@ entity content_ctrl is
     pbsync_i:   in  std_logic_vector(3  downto 0);
     h_pos_i:    in  std_logic_vector(11 downto 0);
     v_pos_i:    in  std_logic_vector(11 downto 0);
-    ena_i:      in std_logic;
-    wea_i:      in std_logic_vector(0 downto 0);
-    addra_i:    in std_logic_vector(16 downto 0);
-    dina_i:     in std_logic_vector(11 downto 0);
 
     red_o:      out std_logic_vector(3 downto 0);
     green_o:    out std_logic_vector(3 downto 0);

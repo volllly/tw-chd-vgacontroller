@@ -2,9 +2,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-library work;
-use work.mc8051_p.all;
-
 entity vga_controler_top is
   port(
     clk_i:      in  std_logic;

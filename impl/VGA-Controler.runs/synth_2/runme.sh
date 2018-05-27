@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log vga_controler_top_cfg.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vga_controler_top_cfg.tcl
+EAStep vivado -log vga_controler_top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vga_controler_top.tcl

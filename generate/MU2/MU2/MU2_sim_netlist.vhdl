@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Mon Apr 16 16:10:14 2018
+-- Date        : Sun May 27 21:53:29 2018
 -- Host        : volly-SF running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/MU2/MU2/MU2_sim_netlist.vhdl
+--               C:/Users/Paul/Desktop/Technikum/4_Semester/CHD/VGA-Controler/generate/MU2/MU2/MU2_sim_netlist.vhdl
 -- Design      : MU2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

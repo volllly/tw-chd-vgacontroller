@@ -75,3 +75,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports reset_i]
 set_property IOSTANDARD LVCMOS33 [get_ports v_sync_o]
 set_property PACKAGE_PIN U18 [get_ports reset_i]
 set_property PACKAGE_PIN T18 [get_ports {pb_i[1]}]
+
+set_property PACKAGE_PIN W5 [get_ports clk_i]

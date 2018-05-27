@@ -1,246 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_3" LaunchPart="xc7a35tcpg236-1" LaunchTime="1525719145">
-  <File Type="OPT-DCP" Name="vga_controler_top_cfg_opt.dcp"/>
-  <File Type="ROUTE-STATUS-PB" Name="vga_controler_top_cfg_route_status.pb"/>
-  <File Type="PA-TCL" Name="vga_controler_top_cfg.tcl"/>
-  <File Type="RDI-RDI" Name="vga_controler_top_cfg.vdi"/>
-  <File Type="PWROPT-DRC" Name="vga_controler_top_cfg_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="vga_controler_top_cfg_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="vga_controler_top_cfg_timing_summary_init.rpt"/>
-  <File Type="OPT-DRC" Name="vga_controler_top_cfg_drc_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="vga_controler_top_cfg_pwropt.dcp"/>
-  <File Type="OPT-HWDEF" Name="vga_controler_top_cfg.hwdef"/>
-  <File Type="OPT-TIMING" Name="vga_controler_top_cfg_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="vga_controler_top_cfg_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="vga_controler_top_cfg_placed.dcp"/>
-  <File Type="PLACE-IO" Name="vga_controler_top_cfg_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="vga_controler_top_cfg_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="vga_controler_top_cfg_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="vga_controler_top_cfg_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="vga_controler_top_cfg_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="vga_controler_top_cfg_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="vga_controler_top_cfg_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="vga_controler_top_cfg_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="vga_controler_top_cfg_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="vga_controler_top_cfg_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="vga_controler_top_cfg_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="vga_controler_top_cfg_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="vga_controler_top_cfg_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-DCP" Name="vga_controler_top_cfg_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="vga_controler_top_cfg_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="vga_controler_top_cfg_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="vga_controler_top_cfg_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="vga_controler_top_cfg_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="vga_controler_top_cfg.bit"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga_controler_top_cfg_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="vga_controler_top_cfg_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="vga_controler_top_cfg_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="vga_controler_top_cfg_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="vga_controler_top_cfg_route_status.rpt"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="vga_controler_top_cfg_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="vga_controler_top_cfg_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="vga_controler_top_cfg_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="vga_controler_top_cfg_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="vga_controler_top_cfg_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vga_controler_top_cfg_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vga_controler_top_cfg_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="vga_controler_top_cfg_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="vga_controler_top_cfg_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="vga_controler_top_cfg_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIN" Name="vga_controler_top_cfg.bin"/>
-  <File Type="BITSTR-MSK" Name="vga_controler_top_cfg.msk"/>
-  <File Type="BITSTR-RBT" Name="vga_controler_top_cfg.rbt"/>
-  <File Type="BITSTR-NKY" Name="vga_controler_top_cfg.nky"/>
-  <File Type="BITSTR-BMM" Name="vga_controler_top_cfg_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="vga_controler_top_cfg.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="vga_controler_top_cfg.sysdef"/>
-  <File Type="BG-BGN" Name="vga_controler_top_cfg.bgn"/>
-  <File Type="BG-DRC" Name="vga_controler_top_cfg.drc"/>
+<GenRun Id="impl_3" LaunchPart="xc7a35tcpg236-1" LaunchTime="1527456671">
+  <File Type="OPT-DCP" Name="vga_controler_top_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="vga_controler_top_route_status.pb"/>
+  <File Type="PA-TCL" Name="vga_controler_top.tcl"/>
+  <File Type="RDI-RDI" Name="vga_controler_top.vdi"/>
+  <File Type="PWROPT-DRC" Name="vga_controler_top_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="vga_controler_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="vga_controler_top_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="vga_controler_top_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="vga_controler_top_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="vga_controler_top.hwdef"/>
+  <File Type="OPT-TIMING" Name="vga_controler_top_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="vga_controler_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="vga_controler_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="vga_controler_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="vga_controler_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="vga_controler_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="vga_controler_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="vga_controler_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="vga_controler_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="vga_controler_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="vga_controler_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="vga_controler_top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="vga_controler_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="vga_controler_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="vga_controler_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="vga_controler_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="vga_controler_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="vga_controler_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="vga_controler_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="vga_controler_top_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vga_controler_top_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="vga_controler_top.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga_controler_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="vga_controler_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="vga_controler_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="vga_controler_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="vga_controler_top_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="vga_controler_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="vga_controler_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="vga_controler_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="vga_controler_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="vga_controler_top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vga_controler_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vga_controler_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="vga_controler_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="vga_controler_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="vga_controler_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="vga_controler_top.bin"/>
+  <File Type="BITSTR-MSK" Name="vga_controler_top.msk"/>
+  <File Type="BITSTR-RBT" Name="vga_controler_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="vga_controler_top.nky"/>
+  <File Type="BITSTR-BMM" Name="vga_controler_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="vga_controler_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="vga_controler_top.sysdef"/>
+  <File Type="BG-BGN" Name="vga_controler_top.bgn"/>
+  <File Type="BG-DRC" Name="vga_controler_top.drc"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_ovcy_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_cy_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_p.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/dcml_adjust_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/control_mem_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/control_fsm_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/comb_mltplr_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/comb_divider_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/alumux_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/alucore_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_ovcy_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_cy_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_core_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_tmrctr_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_siu_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_control_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_alu_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/dcml_adjust_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/control_mem_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/control_fsm_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/comb_mltplr_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/comb_divider_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/alumux_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/alucore_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_core_struc.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../generate/MU3/MU3/MU3.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_tmrctr_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_siu_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_core_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_control_struc.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_alu_struc.vhd">
+    <File Path="$PPRDIR/../vhdl/vga_ctrl_.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -252,71 +71,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../vhdl/content_ctrl_rtl_mem2.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../generate/MU2/MU2/MU2.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../generate/MU1/MU1/MU1.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_top_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../generate/mc8051_ram/mc8051_ram/mc8051_ram.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_core_struc.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/vga_ctrl_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../vhdl/io_ctrl_.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/content_ctrl_rtl_mem1.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../generate/PLL/PLL/PLL.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_top_struc.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -334,145 +89,20 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../vhdl/content_ctrl_rtl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../vhdl/io_ctrl_rtl.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../vhdl/content_ctrl_rtl_config.vhd">
+    <File Path="$PPRDIR/../vhdl/top_struc.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/top_struc_mem2.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/top_struc_config.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/top_struc_mem1.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/control_mem_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/control_fsm_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/alumux_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/alucore_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_cy_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_ovcy_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/addsub_core_struc_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_control_struc_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/comb_divider_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/comb_mltplr_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/dcml_adjust_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_alu_struc_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_siu_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_tmrctr_rtl_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_core_struc_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../vhdl/mc8051/mc8051_top_struc_cfg.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -489,15 +119,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../sw/build/mc8051_rom.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="vga_controler_top_cfg"/>
+      <Option Name="TopModule" Val="vga_controler_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -533,5 +158,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mc8051_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="MU1"/>
+  <BlockFileSet Type="BlockSrcs" Name="MU2"/>
 </GenRun>
